@@ -1,0 +1,260 @@
+/*-----layout------*/
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 800px;
+    height: 725px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+}
+
+.left-side {
+    width: 350px;
+    height: 425px;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    display: inline-block;
+}
+
+#result {
+    width: 350px;
+    height: 50px;
+    position: absolute;
+    top: -15%;
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+#puzzle-area {
+    width: 350px;
+    height: 350px;
+    position: relative;
+}
+
+#start {
+    position: absolute;
+    bottom: 0;
+    left: 125px;
+    width: 100px;
+    height: 50px;
+    border: 3px solid #eaa03d;
+    border-radius: 20px;
+    outline: none;
+    background-color: #faebd7;
+    font-family: cursive;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+#start:hover {
+    transform: scale(1.1);
+}
+
+.right-side{
+    width: 350px;
+    height: 425px;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    display: inline-block;
+}
+
+.line {
+    width: 0px;
+    height: 460px;
+    position: absolute;
+    top: -8%;
+    left: -15%;
+    border: 1px dashed orange;
+}
+
+#picture-reference {
+    width: 350px;
+    height: 350px;
+    position: relative;
+}
+
+.instruction {
+    width: 350px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.puzzle-choice {
+    width: 800px;
+    height: 140px;
+    border: 2px dashed #eaa03d;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+.choice {
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all 0.25s;
+}
+
+.choice img {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    border: 2px solid #eaa03d;
+}
+
+/*------style of each element in the puzzle-------*/
+.element {
+    width: 85px;
+    height: 85px;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: all 0.5s;
+    float: left;
+}
+
+.element:hover {
+    transform: scale(1.05);
+    z-index: 150;
+}
+
+/*----each of the two class position a puzzle element----*/
+.top1 {
+    top: 0;
+}
+
+.top2 {
+    top: 25%;
+}
+
+.top3 {
+    top: 50%;
+}
+
+.top4 {
+    top: 75%;
+}
+
+.left1 {
+    left: 0;
+}
+
+.left2 {
+    left: 25%;
+}
+
+.left3 {
+    left: 50%;
+}
+
+.left4 {
+    left: 75%;
+}
+
+/*----position the background image for each puzzle element----*/
+#element1 {
+    background-position: 0 0;
+}
+
+#element2 {
+    background-position: -87px 0;
+}
+
+#element3 {
+    background-position: -175px 0;
+}
+
+#element4 {
+    background-position: -260px 0;
+}
+
+#element5 {
+    background-position: 0 -87px;
+}
+
+#element6 {
+    background-position: -87px -87px;
+}
+
+#element7 {
+    background-position: -175px -87px;
+}
+
+#element8 {
+    background-position: -260px -87px;
+}
+
+#element9 {
+    background-position: 0 -175px;
+}
+
+#element10 {
+    background-position: -87px -175px;
+}
+
+#element11 {
+    background-position: -175px -175px;
+}
+
+#element12 {
+    background-position: -260px -175px;
+}
+
+#element13 {
+    background-position: 0 -260px;
+}
+
+#element14 {
+    background-position: -87px -260px;
+}
+
+#element15 {
+    background-position: -175px -260px;
+}
+
+div#element16 {
+    background-position: 0 -200px;
+    background-image: none;
+}
+
+div#element16:hover {
+    transform: scale(1);
+}
+
+/*------change puzzle picture------*/
+.panda {
+    background-image: url("images/panda.jpg");
+}
+
+.cat {
+    background-image: url("images/cat.jpg");
+}
+
+.couple {
+    background-image: url("images/couple.jpg");
+}
+
+.star {
+    background-image: url("images/star.jpg");
+}
+
+.dinner {
+    background-image: url("images/dinner.jpg");
+}
